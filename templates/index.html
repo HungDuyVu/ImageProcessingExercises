@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phần Mềm Xử Lý Ảnh</title>
+    <link rel="stylesheet" href="../assests/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <form action="" method="post" enctype="multipart/form-data" id="uploadForm">
+        <div class="container">
+            <div class="header">
+                <h1>XỬ LÝ ẢNH</h1>
+            </div>
+            <div class="main-content">
+                <div class="options">
+                    <button class="image-transform-btn btn btn-success">Chuyển Đổi Ảnh</button>
+                    <button class="threshold-btn btn btn-success">Ngưỡng</button>
+                    <button class="logarithm-transform-btn btn btn-success">Chuyển Đổi Logarithm</button>
+                    <button class="gray-level-histogram-btn btn btn-success">Biểu Đồ Mức Xám</button>
+                    <button class="weighted-average-filter-btn btn btn-success">Bộ Lọc Trung Bình Có Trọng Số</button>
+                    <button class="median-filter-btn btn btn-success">Bộ Lọc Trung Vị</button>
+                    <button class="roberts-operator-btn btn btn-success">Toán Tử Roberts</button>
+                    <button class="sobel-operator-btn btn btn-success">Toán Tử Sobel</button>
+                    <button class="laplacian-operator-btn btn btn-success">Toán Tử Laplacian</button>
+                    <button class="prewitt-operator-btn btn btn-success">Toán Tử Prewitt</button>
+                    <button class="canny-method-btn btn btn-success">Phương Pháp Canny</button>
+                    <button class="otsu-algorithm-btn btn btn-success">Thuật Toán OTSU</button>
+                    <button class="dilation-btn btn btn-success">Phép Co</button>
+                    <button class="erosion-btn btn btn-success">Phép Dãn</button>
+                    <button class="opening-btn btn btn-success">Phép Mở</button>
+                    <button class="closing-btn btn btn-success">Phép Đóng</button>
+                </div>
+                <div class="image-info">
+                    <label for="formFile" class="form-label">CHỌN ẢNH</label>
+                    <input class="image-input form-control" type="file" id="fileInput" onchange="previewImage()">
+                    <div class="image-preview-container">
+                        <div class="image-preview" style="display: inline-block;">
+                            <img id="imagePreview" alt="Xem Trước Ảnh" name="image">
+                        </div>
+                        <div class="image-controls">
+                            <input type="range" min="10" max="200" value="100" step="10" id="zoomRange" oninput="updateZoomFromRange()">
+                            <button onclick="resetZoom()">Reset</button>
+                        </div>
+                    </div>
+                    <div class="converted-image" id="convertImg" style="display: inline-block;">
+                        <!-- Nơi để hiển thị ảnh chuyển đổi -->
+                    </div>
+                </div>
+                
+                  
+            </div>
+        </div>
+    </form>
+
+    <script src="/assests/js/main.js"></script>
+</body>
+
+</html>

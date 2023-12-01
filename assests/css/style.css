@@ -1,0 +1,166 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #bab62b; /* Màu nền xám nhạt */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    padding: 30px;
+    background-color: #007bff; /* Màu xanh dương */
+    color: #fff;
+}
+
+h1 {
+    margin: 0;
+    font-size: 50px;
+}
+
+.main-content {
+    text-align: center;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image-transform-btn,
+.threshold-btn,
+.logarithm-transform-btn,
+.gray-level-histogram-btn,
+.weighted-average-filter-btn,
+.median-filter-btn,
+.roberts-operator-btn,
+.sobel-operator-btn,
+.laplacian-operator-btn,
+.prewitt-operator-btn,
+.canny-method-btn,
+.otsu-algorithm-btn,
+.dilation-btn,
+.erosion-btn,
+.opening-btn,
+.closing-btn {
+    margin: 8px;
+    padding: 15px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #6c757d; /* Màu xám */
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.image-transform-btn:hover,
+.threshold-btn:hover,
+.logarithm-transform-btn:hover,
+.gray-level-histogram-btn:hover,
+.weighted-average-filter-btn:hover,
+.median-filter-btn:hover,
+.roberts-operator-btn:hover,
+.sobel-operator-btn:hover,
+.laplacian-operator-btn:hover,
+.prewitt-operator-btn:hover,
+.canny-method-btn:hover,
+.otsu-algorithm-btn:hover,
+.dilation-btn:hover,
+.erosion-btn:hover,
+.opening-btn:hover,
+.closing-btn:hover {
+    background-color: #343a40; /* Màu xám đậm */
+}
+
+.btn-success {
+    background-color: #dc3545; /* Màu đỏ */
+}
+
+.image-info {
+    text-align: center;
+    padding: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #495057; /* Màu đen */
+    font-size: 30px;
+}
+
+.image-input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 2px solid #007bff; /* Màu xanh dương */
+    border-radius: 8px;
+    background-color: #fff;
+    color: #495057;
+    cursor: pointer;
+}
+
+.image-input:hover {
+    border-color: #28a745; /* Màu xanh lá cây */
+}
+
+.image-input:active,
+.image-input:focus {
+    outline: none;
+    border-color: #dc3545; /* Màu đỏ */
+    box-shadow: 0 0 5px rgba(220, 53, 69, 0.5); /* Màu đỏ trong suốt */
+}
+
+.image-preview {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.image-preview img {
+    max-width: 100%;
+    max-height: 300px;
+    border: 2px solid #007bff; /* Màu xanh dương */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.image-controls {
+    margin-top: 10px;
+}
+
+.image-controls button {
+    padding: 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.image-controls button:last-child {
+    margin-right: 0;
+}
+
+/* Trong file style.css */
+.image-preview-container {
+    display: flex;
+    align-items: center;
+}
+
+
+.image-controls {
+    margin-left: 10px; /* Để tạo khoảng cách giữa thanh trượt và nút Reset */
+}
+
+#imagePreview {
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: contain;
+}
+
+
