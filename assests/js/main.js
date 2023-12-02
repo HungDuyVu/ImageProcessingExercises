@@ -1,4 +1,3 @@
-// Trong main.js
 let currentZoom = 100; // Giá trị zoom mặc định
 
 function previewImage() {

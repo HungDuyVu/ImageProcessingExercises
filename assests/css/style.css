@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #bab62b; /* Màu nền xám nhạt */
+    background-color: #bab62b; 
     margin: 0;
     padding: 0;
 }
@@ -13,7 +13,7 @@ body {
 .header {
     text-align: center;
     padding: 30px;
-    background-color: #007bff; /* Màu xanh dương */
+    background-color: #007bff;
     color: #fff;
 }
 
@@ -55,7 +55,7 @@ h1 {
     border: none;
     cursor: pointer;
     border-radius: 8px;
-    background-color: #6c757d; /* Màu xám */
+    background-color: #6c757d; 
     color: #fff;
     transition: background-color 0.3s ease;
 }
@@ -76,11 +76,11 @@ h1 {
 .erosion-btn:hover,
 .opening-btn:hover,
 .closing-btn:hover {
-    background-color: #343a40; /* Màu xám đậm */
+    background-color: #343a40;
 }
 
 .btn-success {
-    background-color: #dc3545; /* Màu đỏ */
+    background-color: #dc3545;
 }
 
 .image-info {
@@ -92,7 +92,7 @@ h1 {
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
-    color: #495057; /* Màu đen */
+    color: #495057; 
     font-size: 30px;
 }
 
@@ -101,7 +101,7 @@ h1 {
     margin: 10px 0;
     padding: 15px;
     box-sizing: border-box;
-    border: 2px solid #007bff; /* Màu xanh dương */
+    border: 2px solid #007bff; 
     border-radius: 8px;
     background-color: #fff;
     color: #495057;
@@ -109,14 +109,14 @@ h1 {
 }
 
 .image-input:hover {
-    border-color: #28a745; /* Màu xanh lá cây */
+    border-color: #28a745; 
 }
 
 .image-input:active,
 .image-input:focus {
     outline: none;
-    border-color: #dc3545; /* Màu đỏ */
-    box-shadow: 0 0 5px rgba(220, 53, 69, 0.5); /* Màu đỏ trong suốt */
+    border-color: #dc3545; 
+    box-shadow: 0 0 5px rgba(220, 53, 69, 0.5); 
 }
 
 .image-preview {
@@ -127,7 +127,7 @@ h1 {
 .image-preview img {
     max-width: 100%;
     max-height: 300px;
-    border: 2px solid #007bff; /* Màu xanh dương */
+    border: 2px solid #007bff; 
     border-radius: 8px;
     margin-bottom: 10px;
 }
@@ -154,7 +154,7 @@ h1 {
 
 
 .image-controls {
-    margin-left: 10px; /* Để tạo khoảng cách giữa thanh trượt và nút Reset */
+    margin-left: 10px; 
 }
 
 #imagePreview {
